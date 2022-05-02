@@ -1,19 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
-<body>
-    <?php
-        echo "Hello, we are starting to work with Databases and PHP PDO!"; 
-    ?>
-    
-</body>
-</html>
+<?php
+
+session_start();
+session_destroy();
+
+include 'header.php';
+
+?>
+
+
+<div class="container">
+
+    <h4>
+        Click below to begin quizzing!
+    </h4>
+    <br>
+    <form action="question.php" method="post">
+        <button type="submit" class="btn btn-warning info buttons">start</button>
+        <br>
+    </form>
+</div>
+
+
+<?php
+
+include 'footer.php';
+
+?>
